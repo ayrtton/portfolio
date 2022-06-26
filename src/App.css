@@ -1,3 +1,8 @@
+.App {
+    height: 100vh;
+    background: #000045;
+}
+
 .presentation {
     font-weight: 100;
     position: absolute;
@@ -8,10 +13,12 @@
 }
 
 .name {
-    font-size: 85px;
+    font-size: 105px;
     display: block;
+    letter-spacing: 1px;
 }
 
 .message {
-    font-size: 55px;
+    font-size: 60px;
+    letter-spacing: 2px;
 }

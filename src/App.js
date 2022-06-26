@@ -1,14 +1,26 @@
-import './App.css';
+import './App.css'
+import Typewriter from 'typewriter-effect'
 
 function App() {
     return (
         <div className="App">
             <div className="presentation">
                 <span className="name">Ayrton Vinicius</span>
-                <span className="message">Welcome to my Portfolio...</span>
+                <span className="message">
+                    <Typewriter
+                        options={{ loop: true }}
+                        onInit={(typewriter) => {
+                            typewriter
+                                .pauseFor(900)
+                                .changeDelay(60)
+                                .typeString("Welcome to my Portfolio...")
+                                .pauseFor(4500)
+                                .start()
+                        }} />
+                </span>
             </div>
         </div>
     );
 }
 
-export default App;
+export default App
