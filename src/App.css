@@ -1,6 +1,7 @@
 .App {
     height: 100vh;
-    background: #000045;
+    /*background: #000045;*/
+    background-image: linear-gradient(to right bottom, #000035, #000544, #000753, #000562, #000070); 
 }
 
 .presentation {
@@ -15,7 +16,6 @@
 .name {
     font-size: 105px;
     display: block;
-    letter-spacing: 1px;
 }
 
 .message {

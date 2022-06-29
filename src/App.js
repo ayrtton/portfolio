@@ -1,9 +1,11 @@
 import './App.css'
 import Typewriter from 'typewriter-effect'
+import Sidebar from './components/Siderbar';
 
 function App() {
     return (
         <div className="App">
+            <Sidebar />
             <div className="presentation">
                 <span className="name">Ayrton Vinicius</span>
                 <span className="message">
@@ -16,7 +18,8 @@ function App() {
                                 .typeString("Welcome to my Portfolio...")
                                 .pauseFor(4500)
                                 .start()
-                        }} />
+                        }}
+                    />
                 </span>
             </div>
         </div>
