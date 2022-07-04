@@ -16,7 +16,7 @@ function App() {
                                 .pauseFor(900)
                                 .changeDelay(60)
                                 .typeString("Welcome to my Portfolio...")
-                                .pauseFor(4500)
+                                .pauseFor(9000)
                                 .start()
                         }}
                     />
