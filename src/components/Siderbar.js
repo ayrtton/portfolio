@@ -2,6 +2,7 @@ import styles from "./Sidebar.module.css"
 import { IoHome } from "react-icons/io5"
 import { FaUser, FaSuitcase, FaTools, FaMailBulk } from "react-icons/fa"
 import { useState } from "react"
+import { Link } from "react-router-dom"
 
 function Sidebar() {
     const [isVisible, setIsVisible] = useState(0)
@@ -10,8 +11,10 @@ function Sidebar() {
         <div className={styles.sidebar}>
             <ul>
                 <li onMouseLeave={() => setIsVisible(0)}>
-                    {isVisible === 1 && <div className={styles.iconTitle}>Home</div>}
-                    <IoHome className={styles.icon} onMouseOver={() => setIsVisible(1)} />
+                    <Link to="/">
+                        {isVisible === 1 && <div className={styles.iconTitle}>Home</div>}
+                        <IoHome className={styles.icon} onMouseOver={() => setIsVisible(1)} />
+                    </Link>
                 </li>
                 <li onMouseLeave={() => setIsVisible(0)}>
                     {isVisible === 2 && <div className={styles.iconTitle}>About</div>}
@@ -19,15 +22,15 @@ function Sidebar() {
                 </li>
                 <li onMouseLeave={() => setIsVisible(0)}>
                     {isVisible === 3 && <div className={styles.iconTitle}>Experience</div>}
-                    <FaSuitcase className={styles.icon} onMouseOver={() => setIsVisible(3)}/>
+                    <FaSuitcase className={styles.icon} onMouseOver={() => setIsVisible(3)} />
                 </li>
                 <li onMouseLeave={() => setIsVisible(0)}>
                     {isVisible === 4 && <div className={styles.iconTitle}>Personal Projects</div>}
-                    <FaTools className={styles.icon} onMouseOver={() => setIsVisible(4)}/>
+                    <FaTools className={styles.icon} onMouseOver={() => setIsVisible(4)} />
                 </li>
                 <li onMouseLeave={() => setIsVisible(0)}>
                     {isVisible === 5 && <div className={styles.iconTitle}>Contact</div>}
-                    <FaMailBulk className={styles.icon} onMouseOver={() => setIsVisible(5)}/>
+                    <FaMailBulk className={styles.icon} onMouseOver={() => setIsVisible(5)} />
                 </li>
             </ul>
         </div>

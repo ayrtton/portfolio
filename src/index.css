@@ -4,4 +4,10 @@ body {
     margin: 0;
     color: white;
     font-family: 'Exo 2';
+    background-image: linear-gradient(to right bottom, #000035, #000544, #000753, #000562, #000070);
+    height: 100vh; 
+}
+
+a {
+    color: inherit;
 }

@@ -1,29 +1,17 @@
-import './App.css'
-import Typewriter from 'typewriter-effect'
-import Sidebar from './components/Siderbar';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import Sidebar from './components/Siderbar'
+import About from './pages/About'
+import Home from './pages/Home'
 
 function App() {
     return (
-        <div className="App">
+        <Router>
             <Sidebar />
-            <div className="presentation">
-                <span className="name">Ayrton Vinicius</span>
-                <span className="message">
-                    <Typewriter
-                        options={{ loop: true }}
-                        onInit={(typewriter) => {
-                            typewriter
-                                .pauseFor(900)
-                                .changeDelay(60)
-                                .typeString("Welcome to my Portfolio...")
-                                .pauseFor(9000)
-                                .start()
-                        }}
-                    />
-                </span>
-            </div>
-        </div>
-    );
+            <Routes>
+                <Route path="/" element={<Home />}></Route>
+            </Routes>
+        </Router>
+    )
 }
 
 export default App
