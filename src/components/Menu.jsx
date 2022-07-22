@@ -1,6 +1,7 @@
 import styles from "./Menu.module.css"
 import { IoHome } from "react-icons/io5"
-import { FaUser } from "react-icons/fa"
+import { FaUserTie, FaTools } from "react-icons/fa"
+import { FaCode} from "react-icons/fa"
 import { useState } from "react"
 import { Link } from "react-router-dom"
 
@@ -14,7 +15,7 @@ function Menu() {
     }
 
     return (
-        <div className={styles.sidebar}>
+        <div className={styles.menuContent}>
             <ul>
                 <li onMouseLeave={() => setIsVisible(0)}>
                     <Link to="/">
@@ -22,12 +23,18 @@ function Menu() {
                         <IoHome className={styles.icon} onMouseOver={() => setIsVisible(1)} />
                     </Link>
                 </li>
-                {/*<li onMouseLeave={() => setIsVisible(0)}>
+                <li onMouseLeave={() => setIsVisible(0)}>
                     <Link to="/about">
                         {isDesktop() && isVisible === 2 && <div className={styles.iconTitle}>About Me</div>}
-                        <FaUser className={styles.icon} onMouseOver={() => setIsVisible(2)} />
+                        <FaUserTie className={styles.icon} onMouseOver={() => setIsVisible(2)} />
                     </Link>
-                </li>*/}
+                </li>
+                <li onMouseLeave={() => setIsVisible(0)}>
+                    <Link to="/about">
+                        {isDesktop() && isVisible === 3 && <div className={styles.iconTitle}>Projects</div>}
+                        <FaCode className={styles.icon} onMouseOver={() => setIsVisible(3)} />
+                    </Link>
+                </li>
             </ul>
         </div>
     )

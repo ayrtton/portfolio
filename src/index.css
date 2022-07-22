@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200&display=swap');
 
+html {
+    height: 100%;
+}
+
 body {
     margin: 0;
     color: white;
     font-family: 'Exo 2';
-    background-image: linear-gradient(to right bottom, #000035, #000544, #000753, #000562, #000070);
-    height: 100vh; 
+    background-image: linear-gradient(to right bottom, #000035, #000544, #000753, #000562, #000075);
+    background-attachment: fixed;
 }
 
 a {
