@@ -30,7 +30,7 @@ function Menu() {
                     </Link>
                 </li>
                 <li onMouseLeave={() => setIsVisible(0)}>
-                    <Link to="/about">
+                    <Link to="/projects">
                         {isDesktop() && isVisible === 3 && <div className={styles.iconTitle}>Projects</div>}
                         <FaCode className={styles.icon} onMouseOver={() => setIsVisible(3)} />
                     </Link>

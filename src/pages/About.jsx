@@ -13,6 +13,7 @@ function About() {
             </p>
 
             <h1>Skill Set</h1>
+            <span id={styles.constructionMessage}>Under construction...</span>
             <div id={styles.skills}>
                 <div className={styles.logo}>
                     <FaLaravel id={styles.laravel} />
