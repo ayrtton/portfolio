@@ -1,0 +1,31 @@
+h1 {
+    font-size: 35px;
+    text-shadow: 0px 0px 5px white;
+    font-weight: 200;
+}
+
+#constructionMessage {
+    display: block;
+    text-indent: 30px;
+}
+
+@media only screen and (min-width: 150px) {
+    .projectsContent {
+        margin: auto 8.2vw;
+    }
+
+    #constructionMessage {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width: 1050px) {
+    .projectsContent {
+        position: absolute;
+        margin: 40px 7.5vw;
+    }
+
+    #constructionMessage {
+        font-size: 22px;
+    }
+}
