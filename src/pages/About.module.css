@@ -1,29 +1,11 @@
 h1 {
     font-size: 35px;
-    text-shadow: 0px 0px 4px white;
+    text-shadow: 0px 0px 5px white;
+    font-weight: 200;
 }
 
 #skills {
     text-align: center;
-    width: 900px;
-    margin: auto auto 60px 90px;
-}
-
-.logo {
-    display: inline-block;
-    font-size: 85px;
-    margin: 0px 9px 18px;
-    padding: 15px;
-    width: 120px;
-    background-image: linear-gradient(to right bottom, #ffffff60 10%, #ffffff00);
-    border-width: 2px;
-    border-style: solid;
-    border-image: linear-gradient(to right, rgb(255, 255, 255), rgba(255, 255, 255, 0.452)) 1;
-}
-
-.logoTitle {
-    font-size: 18px;
-    display: block;
 }
 
 #laravel {
@@ -63,20 +45,47 @@ h1 {
     }
 }
 
-@media only screen and (min-width: 1050px) { 
+@media only screen and (min-width: 631px) {
+    .logo {
+        width: 120px;
+        height: 120px;
+        display: inline-block;
+        font-size: 85px;
+        margin: 0px 9px 18px;
+        padding: 15px;
+        background-image: linear-gradient(to right bottom, #ffffff50, #ffffff00 60%);
+        border-width: 1px;
+        border-style: solid;
+        border-image: linear-gradient(to right, rgb(255, 255, 255, 0.9), rgba(255, 255, 255, 0.452)) 1;
+    }
+
+    .logoTitle {
+        font-size: 18px;
+        display: block;
+    }
+
+    svg {
+        width: 85px;
+    }
+}
+
+@media only screen and (min-width: 1050px) {
     .aboutContent {
         position: absolute;
-        margin: 40px 100px;
+        margin: 40px 7.5vw;
     }
 
     #aboutText {
-        margin: 20px 90px 40px 40px;
+        margin-left: 40px;
         text-indent: 50px;
         font-size: 22px;
+        width: 75vw;
     }
 
     #skills {
         display: block;
+        width: 75vw;
+        margin: auto 30px 70px;
     }
 
     #constructionMessage {
