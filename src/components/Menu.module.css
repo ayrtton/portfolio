@@ -42,7 +42,7 @@ li :hover {
     }
 }
 
-@media only screen and (min-width: 960px) {
+@media only screen and (min-width: 1050px) {
     .menuContent {
         display: block;
         position: fixed;
