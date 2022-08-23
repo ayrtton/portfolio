@@ -3,6 +3,7 @@ import Menu from "./components/Menu"
 import Home from "./pages/Home"
 import About from "./pages/About"
 import Projects from "./pages/Projects"
+import Footer from "./components/Footer"
 
 function AppRoutes() {
     return (
@@ -13,6 +14,7 @@ function AppRoutes() {
                 <Route path="/about" element={<About />}></Route>
                 <Route path="/projects" element={<Projects />}></Route>
             </Routes>
+            <Footer />
         </Router>
     )
 }
