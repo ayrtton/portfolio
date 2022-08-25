@@ -1,6 +1,6 @@
 import styles from "./Menu.module.css"
 import { IoHome } from "react-icons/io5"
-import { FaUserTie, FaTools } from "react-icons/fa"
+import { FaUserTie } from "react-icons/fa"
 import { FaCode} from "react-icons/fa"
 import { useState } from "react"
 import { Link } from "react-router-dom"

@@ -1,3 +1,36 @@
+.left {
+    width: 75%;
+    float: left;
+}
+
+.copyright {
+    margin-left: 50%;
+}
+
+.right {
+    width: 25%;
+    float: right;
+    display: flex;
+    justify-content: center;
+}
+
+.socialLink {
+    width: auto;
+    display: block;
+    margin-left: 45px;
+    padding-top: 2px;
+}
+
+.icon {
+    font-size: 35px;
+    filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.3));
+    width: auto;
+}
+
+.icon:hover {
+    filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.5));
+}
+
 @media only screen and (min-width: 1px) {
     .footerContent {
         display: none;
@@ -6,12 +39,14 @@
 
 @media only screen and (min-width: 1050px) {
     .footerContent {
-        display: block;
-        background-color: rgb(0, 0, 50);
+        display: flex;
+        align-items: center;
         margin-top: auto;
         height: 80px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        width: 100%;
+        background-color: rgb(0, 0, 50);
+        text-shadow: 0px 0px 6px white;
+        z-index: 2;
+        position: absolute;
     }
 }
