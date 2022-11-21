@@ -5,7 +5,7 @@ function Home() {
     return (
         <main className={styles.homeContainer}>
             <section className={styles.homeContent}>
-                <span className={styles.name}>Ayrton Vinicius</span>
+                <span className={styles.name}>Hi, I'm Ayrton.</span>
                 <span className={styles.message}>
                     <Typewriter
                         options={{ loop: true }}

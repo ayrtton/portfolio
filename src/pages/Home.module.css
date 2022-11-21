@@ -1,48 +1,21 @@
 .homeContainer {
+    height: 100vh;
     font-weight: 100;
-    text-shadow: 0px 0px 7px white;
+    text-shadow: 0px 0px 0.8vw white;
     display: flex; 
     flex-direction: column;
-    height: 100vh;
     justify-content: center;
 }
 
 .homeContent {
-    padding-bottom: 32px;
+    padding: 0 6.5vw 3vh;
 }
 
 .name {
-    display: block;
+    font-size: 5.6vw;
 }
 
 .message {
-    letter-spacing: 2px;
-}
-
-@media only screen and (min-width: 150px) {
-    .homeContent {
-        margin-left: 8.2vw;
-    }
-
-    .name {
-        font-size: 9.8vw;
-    }
-
-    .message {
-        font-size: 5.6vw;
-    }
-}
-
-@media only screen and (min-width: 1050px) {
-    .homeContent {
-        margin-left: 85px;
-    }
-
-    .name {
-        font-size: 105px;
-    }
-
-    .message {
-        font-size: 60px;
-    }
+    letter-spacing: 0.14vw;
+    font-size: 4.4vw;
 }
