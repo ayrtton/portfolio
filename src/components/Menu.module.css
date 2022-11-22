@@ -1,7 +1,8 @@
 .menuContent {
-    display: block;
+    display: flex;
+    align-items: center;
     position: fixed;
-    right: 4vw;
+    right: 0;
     height: 100vh;
     width: 16vw;
     z-index: 1;
@@ -9,33 +10,34 @@
 }
 
 ul {
+    width: 100%;
     list-style: none;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    text-align: right;
-    right: 0;
+    padding: 0;
+    font-size: 1.2vw;
 }
 
 li {
-    display: block;
-    padding: 3vh 0;
-    font-size: 1.2vw;
+    padding: 3vh 3vw 3vh 0;
 }
 
 li:hover {
     cursor: pointer;
 }
 
+li a {
+    display: flex;
+    justify-content: end;
+}
+
 .iconTitle {
-    display: inline-block;
-    top: 50%;
-    transform: translateY(-50%);
-    text-shadow: 0px 0px 9px white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-shadow: 0px 0px 0.9vw white;
 }
 
 .icon {
-    color: white;
+    max-width: 4vw;
     filter: drop-shadow(0px 0px 0.8vw rgba(255, 255, 255, 0.7));
     margin-left: 1.5vw;
     font-size: 2.7vw;
