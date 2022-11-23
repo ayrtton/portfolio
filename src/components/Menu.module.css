@@ -42,3 +42,9 @@ li a {
     margin-left: 1.5vw;
     font-size: 2.7vw;
 }
+
+@media (max-width: 768px) {
+    .menuContent {
+        display: none;
+    }
+}
