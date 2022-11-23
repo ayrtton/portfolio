@@ -4,10 +4,10 @@ import { FaGithub, FaLinkedin } from "react-icons/fa"
 function Footer() {
     return (
         <footer className={styles.footerContent}>
-            <div className={styles.left}>
-                <span className={styles.copyright}>Ayrton Vinicius © 2022</span>
+            <div className={styles.copyright}>
+                <span className={styles.copyrightText}>Ayrton Vinicius © 2022</span>
             </div>
-            <div className={styles.right}>
+            <div className={styles.social}>
                 <a className={styles.socialLink} href="https://github.com/ayrtton/">
                     <FaGithub className={styles.icon}/>
                 </a>
