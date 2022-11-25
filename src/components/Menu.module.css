@@ -4,7 +4,7 @@
     position: fixed;
     right: 0;
     height: 100vh;
-    width: 16vw;
+    width: 15vw;
     z-index: 1;
     background-color: transparent;
 }
@@ -20,13 +20,13 @@ li {
     padding: 3vh 3vw 3vh 0;
 }
 
-li:hover {
-    cursor: pointer;
-}
-
 li a {
     display: flex;
     justify-content: end;
+}
+
+li a:hover .iconTitle {
+    opacity: 1;
 }
 
 .iconTitle {
@@ -34,6 +34,8 @@ li a {
     align-items: center;
     text-align: center;
     text-shadow: 0px 0px 0.9vw white;
+    opacity: 0;
+    transition: 0.5s;
 }
 
 .icon {
