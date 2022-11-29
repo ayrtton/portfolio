@@ -3,7 +3,7 @@ import Typewriter from 'typewriter-effect'
 
 function Home() {
     return (
-        <main className={styles.homeContainer}>
+        <main className={styles.main}>
             <section className={styles.homeContent}>
                 <span className={styles.name}>Hi, I'm Ayrton.</span>
                 <span className={styles.message}>
