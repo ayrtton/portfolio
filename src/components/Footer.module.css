@@ -34,7 +34,34 @@
 }
 
 @media (max-width: 768px) {
+    .copyright {
+        font-size: 2.4vh;
+        width: 65%;
+    }
+
+    .social {
+        width: 25%;
+    }
+
+    .icon {
+        font-size: 5.4vh;
+    }
+}
+
+@media (max-width: 576px) {
     .footerContent {
-        display: none;
+        height: 20vh;
+        flex-direction: column-reverse;
+        gap: 15%;
+    }
+
+    .social {
+        width: 50%;
+        justify-content: center;
+        gap: 10%;
+    }
+
+    .icon {
+        min-width: 12vw;
     }
 }
