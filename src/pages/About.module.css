@@ -4,42 +4,36 @@
 }
 
 #aboutText {
-    margin-left: 40px;
-    text-indent: 50px;
-    font-size: 22px;
+    margin-left: 3vw;
+    text-indent: 3.6vw;
+    font-size: 1.65vw;
     width: 75vw;
 }
 
 #skills {
     text-align: center;
     width: 75vw;
-    margin: auto 30px 0px;
+    margin: auto 2.2vw 0;
 }
 
 .logo {
     display: inline-block;
     background-image: linear-gradient(to right bottom, #ffffff50, #ffffff00 60%);
-    border-width: 1px;
+    border-width: 0.1vw;
     border-style: solid;
     border-image: linear-gradient(to right, rgb(255, 255, 255, 0.9), rgba(255, 255, 255, 0.452)) 1;
-    width: 120px;
-    height: 120px;
-    margin: 0px 9px 18px;
-    padding: 15px;
+    width: 8.7vw;
+    height: 8.7vw;
+    margin: 0 0.65vw 1.3vw;
+    padding: 1vw;
 }
 
 svg {
-    width: 85px;
+    width: 6.2vw;
 }
 
 .logoTitle {
     display: block;
-    font-size: 18px;
-    margin-top: 12px;
-}
-
-@media (max-width: 768px) {
-    .skillsSection {
-        display: none;
-    }
+    font-size: 1.3vw;
+    margin-top: 0.8vw;
 }
