@@ -1,6 +1,7 @@
 .main {
     min-height: 100vh;
     padding: 6vh 7.5vw;
+    box-sizing: border-box;
 }
 
 #aboutText {
