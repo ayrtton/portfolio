@@ -46,14 +46,35 @@
     background-image: url('../images/project02.jpg');
 }
 
-@media (max-width: 768px) {
-    #constructionMessage {
-        display: block;
-        text-indent: 30px;
-        font-size: 18px;
+@media (max-width: 768px) {    
+    .main {
+        padding-top: 4vw;
     }
 
     .projectList {
-        display: none;
+        margin: auto;
+        width: 100%;
+        font-size: 2.5vh;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .project {
+        width: 90%;
+        height: calc(100vh/2);
+        gap: 2vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .project {
+        width: 100%;
+        height: calc(100vh/3);
+    }
+
+    .row {
+        gap: 5vh;
     }
 }

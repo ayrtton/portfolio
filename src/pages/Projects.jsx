@@ -1,12 +1,9 @@
 import styles from "./Projects.module.css"
-import project01 from "./../images/project01.jpg"
-import project02 from "./../images/project02.jpg"
 
 function Projects() {
     return (
         <div className={styles.main}>
             <h1>Projects</h1>
-            <span id={styles.constructionMessage}>Under construction...</span>
             <div className={styles.projectList}>
                 <div className={styles.row}>
                     <div className={styles.project}>
