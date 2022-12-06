@@ -65,17 +65,17 @@ svg {
 
 @media (max-width: 500px) {
     .logo {
-        width: 11vh;
-        height: 11vh;
+        width: calc(100vw/5 - 1vw);
+        height: calc(100vw/5 - 1vw);
         margin: 0 1vw 2vw;
-        padding: 1.1vh;
+        padding: 1.2vh;
     }
 
     svg {
-        width: 8vh;
+        width: calc(100vw/5 - 6vw);
     }
 
     .logoTitle {
-        font-size: 1.7vh;
+        font-size: calc(4vw - 1vw);
     }
 }
