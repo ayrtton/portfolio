@@ -40,13 +40,42 @@ svg {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 768px) {  
+    .main {
+        padding-top: 4vw;
+    }
+
     .skillsSection {
-        display: none;
+        margin-top: 5vh;
+    }
+
+    #skills {
+        width: 100%;
+        margin: auto;
+        padding: 0;
     }
 
     #aboutText {
+        margin: 0;
+        width: 100%;
         text-indent: 4vh;
-        font-size: 2.8vh;
+        font-size: 2.5vh;
+    }
+}
+
+@media (max-width: 500px) {
+    .logo {
+        width: 11vh;
+        height: 11vh;
+        margin: 0 1vw 2vw;
+        padding: 1.1vh;
+    }
+
+    svg {
+        width: 8vh;
+    }
+
+    .logoTitle {
+        font-size: 1.7vh;
     }
 }
