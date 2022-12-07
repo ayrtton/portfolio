@@ -20,6 +20,11 @@ li {
     padding: 3vh 3vw 3vh 0;
 }
 
+li:first-child {
+    display: none;
+    justify-content: end;
+}
+
 li a {
     display: flex;
     justify-content: end;
@@ -47,6 +52,40 @@ li a:hover .iconTitle {
 
 @media (max-width: 768px) {
     .menuContent {
-        display: none;
+        display: flex;
+        height: 35vh;
+        min-width: 30vw;
+        align-items: start;
+    }
+
+    li:first-child {
+        display: flex;
+        padding: 3vw 5vw 0 0;
+    }
+
+    li {
+        padding: 2vh 5.5vw 1.5vh 0;
+    }
+
+    .menuItem {
+        opacity: 0;
+        transition: 1s;
+    }
+
+    .icon {
+        font-size: 4.2vh;
+        max-width: none;
+        margin-right: 0.2vh;
+    }
+
+    .icon:first-child {
+        font-size: 5.3vh;
+        margin-right: 0;
+    }
+
+    .iconTitle {
+        opacity: 1;
+        font-size: 1.5vh;
+        margin-right: 0.7vw;
     }
 }
