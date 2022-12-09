@@ -7,27 +7,30 @@ import { Link } from "react-router-dom"
 
 function Menu() {
     let isActive = false
+    let isMobile = window.innerWidth <= 768
 
     function activateMenu() {
-        let menuItems = document.getElementsByClassName(styles.menuItem)
+        if(isMobile) {
+            let menuItems = document.getElementsByClassName(styles.menuItem)
 
-        if(!isActive) {
-            let time = 0.7
-            for(let i of menuItems) {
-                i.style.transition = `${time}s`
-                i.style.opacity = "1"
-                time += 0.5
+            if(!isActive) {
+                let time = 0.7
+                for(let i of menuItems) {
+                    i.style.transition = `${time}s`
+                    i.style.opacity = "1"
+                    time += 0.5
+                }
+            } else {
+                let time = 1
+                for(let i of menuItems) {
+                    i.style.transition = `${time}s`
+                    i.style.opacity = "0"
+                    time -= 0.5
+                }
             }
-        } else {
-            let time = 1
-            for(let i of menuItems) {
-                i.style.transition = `${time}s`
-                i.style.opacity = "0"
-                time -= 0.5
-            }
+
+            isActive = !isActive
         }
-
-        isActive = !isActive
     }
 
     return (
