@@ -36,6 +36,7 @@
     width: 100%;
     background-size: cover;
     background-position: center;
+    border-radius: 0.5vw;
 }
 
 #image1 {
@@ -43,7 +44,9 @@
 }
 
 #image2 {
-    background-image: url('../images/project02.jpg');
+    background-image: url('../images/construction.png');
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 @media (max-width: 768px) {    

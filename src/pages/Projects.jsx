@@ -12,7 +12,7 @@ function Projects() {
                     </div>
                     <div className={styles.project}>
                         <div id={styles.image2}></div>
-                        <a className={styles.projectTitle} href="https://github.com/ayrtton/auth-system-codeigniter" target="_blank" rel="noreferrer">Authentication System [CodeIgniter]</a>
+                        <a className={styles.projectTitle} href="" target="" rel="noreferrer">Under Construction</a>
                     </div>
                 </div>
             </div>  

@@ -5,7 +5,7 @@ function Footer() {
     return (
         <footer className={styles.footerContent}>
             <div className={styles.copyright}>
-                <span className={styles.copyrightText}>Ayrton Vinicius © 2022</span>
+                <span className={styles.copyrightText}>Ayrton Vinicius © {new Date().getFullYear()}</span>
             </div>
             <div className={styles.social}>
                 <a className={styles.socialLink} href="https://github.com/ayrtton/">
