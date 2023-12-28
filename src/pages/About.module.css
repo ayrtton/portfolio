@@ -4,7 +4,11 @@
     box-sizing: border-box;
 }
 
-#aboutText {
+.aboutSection {
+    margin-bottom: 10vh;
+}
+
+.aboutText {
     margin-left: 3vw;
     text-indent: 3.6vw;
     font-size: 1.65vw;
@@ -55,7 +59,7 @@
         padding: 0;
     }
 
-    #aboutText {
+    .aboutText {
         margin: 0;
         width: 100%;
         text-indent: 4vh;

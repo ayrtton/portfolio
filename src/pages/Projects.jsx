@@ -8,11 +8,9 @@ function Projects() {
                 <div className={styles.row}>
                     <div className={styles.project}>
                         <div id={styles.image1}></div>
-                        <a className={styles.projectTitle} href="https://github.com/ayrtton/login-signup" target="_blank" rel="noreferrer">Authentication System [Laravel and React]</a>
+                        <a className={styles.projectTitle} href="https://github.com/ayrtton" target="" rel="noreferrer">Under Construction...</a>
                     </div>
                     <div className={styles.project}>
-                        <div id={styles.image2}></div>
-                        <a className={styles.projectTitle} href="" target="" rel="noreferrer">Under Construction</a>
                     </div>
                 </div>
             </div>  
