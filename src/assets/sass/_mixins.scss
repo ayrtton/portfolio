@@ -1,0 +1,6 @@
+@mixin flexbox($height) {
+    display: flex; 
+    height: $height;
+    flex-direction: column;
+    justify-content: center;
+}

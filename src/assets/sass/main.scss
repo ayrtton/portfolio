@@ -1,0 +1,13 @@
+@import './config', './mixins', './pages/home';
+
+body {
+    margin: 0;
+    font-family: 'Exo 2';
+    color: $white;
+    background-image: $background;
+    background-attachment: fixed;
+}
+
+main {
+    @include flexbox(100vh);
+}

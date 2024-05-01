@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200&display=swap');
+
+$background: linear-gradient(170deg, hsl(240deg 100% 10%) 3%, hsl(235deg 100% 12%) 32%, hsl(231deg 100% 15%) 47%, hsl(230deg 100% 17%) 57%, hsl(230deg 100% 19%) 66%, hsl(231deg 100% 21%) 73%, hsl(231deg 100% 24%) 79%, hsl(231deg 100% 26%) 84%, hsl(231deg 100% 28%) 88%, hsl(232deg 100% 31%) 91%, hsl(232deg 100% 33%) 94%, hsl(233deg 100% 36%) 96%, hsl(234deg 100% 38%) 98%, hsl(234deg 100% 40%) 99%, hsl(235deg 100% 43%) 100%, hsl(236deg 100% 45%) 100%, hsl(238deg 100% 48%) 100%, hsl(240deg 100% 50%) 100%);
+$white: hsl(0, 0, 100%);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

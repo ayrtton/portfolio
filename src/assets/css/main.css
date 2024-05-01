@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.home {
+  display: flex;
+  height: auto;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 6.5vw;
+  font-weight: 100;
+  text-shadow: 0px 0px 0.8vw white;
+}
+.home__name {
+  font-size: 5.6vw;
+}
+.home__message {
+  letter-spacing: 0.14vw;
+  font-size: 4.4vw;
+}
+
+@media (max-width: 576px) {
+  .home {
+    gap: 0.7vh;
+  }
+  .home__name {
+    font-size: 9vw;
+  }
+  .home__message {
+    letter-spacing: 0;
+    font-size: 7.3vw;
+  }
+}
+body {
+  margin: 0;
+  font-family: "Exo 2";
+  color: hsl(0, 0%, 100%);
+  background-image: linear-gradient(170deg, hsl(240, 100%, 10%) 3%, hsl(235, 100%, 12%) 32%, hsl(231, 100%, 15%) 47%, hsl(230, 100%, 17%) 57%, hsl(230, 100%, 19%) 66%, hsl(231, 100%, 21%) 73%, hsl(231, 100%, 24%) 79%, hsl(231, 100%, 26%) 84%, hsl(231, 100%, 28%) 88%, hsl(232, 100%, 31%) 91%, hsl(232, 100%, 33%) 94%, hsl(233, 100%, 36%) 96%, hsl(234, 100%, 38%) 98%, hsl(234, 100%, 40%) 99%, hsl(235, 100%, 43%) 100%, hsl(236, 100%, 45%) 100%, hsl(238, 100%, 48%) 100%, hsl(240, 100%, 50%) 100%);
+  background-attachment: fixed;
+}
+
+main {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+}/*# sourceMappingURL=main.css.map */
