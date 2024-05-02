@@ -1,6 +1,9 @@
-@mixin flexbox($height) {
+@mixin flexbox($height: auto, $width: auto, $flex-direction: row, 
+               $align-items: normal, $justify-content: center) {
     display: flex; 
     height: $height;
-    flex-direction: column;
-    justify-content: center;
+    width: $width;
+    align-items: $align-items;
+    flex-direction: $flex-direction;
+    justify-content: $justify-content;
 }

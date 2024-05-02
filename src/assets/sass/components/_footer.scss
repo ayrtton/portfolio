@@ -1,0 +1,65 @@
+.footer {
+    @include flexbox(12vh, 100%, row, center);
+    background-color: $dark-blue;
+    gap: 2%;
+    position: absolute;
+    z-index: 2;
+    text-shadow: 0 0 0.4vw $white;
+
+    &__copyright {
+        width: 75%;
+        text-align: center;
+        font-size: 1.2vw;
+    }
+    
+    &__social {
+        @include flexbox(auto, 15%, row, normal, space-evenly);
+
+        &-icon {
+            color: $white;
+            width: 5vw;
+            font-size: 2.6vw;
+            filter: drop-shadow(0 0 1.2vw $transparent-white);
+
+            &:hover {
+                filter: drop-shadow(0 0 0.8vw $transparent-white);
+            }
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .footer {
+        &__copyright {
+            font-size: 2vh;
+            width: 65%;
+        }
+
+        &__social {
+            width: 25%;
+
+            &-icon {
+                font-size: 4vh;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .footer {
+        height: 15vh;
+        flex-direction: column-reverse;
+        gap: 12%;
+
+        &__social {
+            width: 50%;
+            justify-content: center;
+            gap: 10%;
+
+            &-icon {
+                min-width: 12vw;
+                font-size: 4.2vh;
+            }
+        }
+    }
+}
