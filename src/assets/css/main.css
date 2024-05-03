@@ -88,7 +88,7 @@
   font-size: 2.7vw;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .menu {
     height: 35vh;
     min-width: 30vw;

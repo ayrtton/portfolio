@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Menu() {
     let isActive = false;
-    let isMobile = window.innerWidth <= 768;
+    let isMobile = window.innerWidth <= 900;
 
     function activateMenu() {
         if(isMobile) {
@@ -11,16 +11,16 @@ function Menu() {
 
             if(!isActive) {
                 let time = 0.7;
-                for(let i of menuItems) {
-                    i.style.transition = `${time}s`;
-                    i.style.opacity = "1";
+                for(let i = 1; i < menuItems.length; i++) {
+                    menuItems[i].style.transition = `${time}s`;
+                    menuItems[i].style.opacity = "1";
                     time += 0.5;
                 }
             } else {
                 let time = 1;
-                for(let i of menuItems) {
-                    i.style.transition = `${time}s`;
-                    i.style.opacity = "0";
+                for(let i = 1; i < menuItems.length; i++) {
+                    menuItems[i].style.transition = `${time}s`;
+                    menuItems[i].style.opacity = "0";
                     time -= 0.5;
                 }
             }
