@@ -16,7 +16,6 @@
         @include flexbox(auto, 15%, row, normal, space-evenly);
 
         &-icon {
-            color: $white;
             width: 5vw;
             font-size: 2.6vw;
             filter: drop-shadow(0 0 1.2vw $transparent-white);
