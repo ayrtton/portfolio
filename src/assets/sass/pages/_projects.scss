@@ -1,0 +1,64 @@
+.projects {
+    min-height: 100vh;
+    padding: 9vh 7.5vw;
+
+    &__list {
+        width: 88%;
+        padding-top: 4vh;
+        margin-left: 3vw;
+        font-size: 1.3vw;
+
+        &-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2.5vw;
+            padding: 1vw;
+        }
+
+        &-item {
+            width: calc(100%/2);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1vh;
+        }
+
+        &-image {
+            width: 100%;
+            border-radius: .5vw;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .projects {
+        padding-bottom: 3vh;
+
+        &__list {
+            width: 100%;
+            margin: auto;
+            font-size: 2.5vh;
+
+            &-row {
+                flex-direction: column;
+            }
+
+            &-item {
+                width: 90%;
+                margin-bottom: 3vh;
+            }
+
+            &-image {
+                border-radius: 1vh;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 500px) {
+    .projects {
+        padding-top: 6vh;
+    }
+}

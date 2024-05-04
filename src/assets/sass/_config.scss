@@ -10,8 +10,21 @@ $dark-blue: rgb(0, 0, 50);
     padding: 0;
     box-sizing: border-box;
 
+    h1 {
+        text-shadow: 0 0 0.3vw $white;
+        font-weight: 200;
+        font-size: 2.4vw;
+    }
+
     a {
         color: inherit;
         text-decoration: none;
+    }
+
+    @media (max-width: 900px) {
+        h1 {
+            font-size: 4vh;
+            text-shadow: 0 0 0.7vh white;
+        }
     }
 }
