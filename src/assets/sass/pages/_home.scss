@@ -14,7 +14,7 @@
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 576px) and (orientation: portrait) {
     .home {
         gap: .7vh;
 

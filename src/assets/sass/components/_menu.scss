@@ -43,7 +43,7 @@
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 900px) and (orientation: portrait) {
     .menu {
         height: 35vh;
         min-width: 30vw;
