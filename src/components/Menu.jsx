@@ -4,7 +4,8 @@ import { Link } from "react-router-dom";
 
 function Menu() {
     let isActive = false;
-    let isMobile = window.innerWidth <= 900;
+    let isMobile = window.innerWidth <= 900 && (window.screen.orientation.type === "portrait-primary" ||
+                   window.screen.orientation.type === "portrait-secondary");
 
     function activateMenu() {
         if(isMobile) {
