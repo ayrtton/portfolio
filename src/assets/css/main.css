@@ -55,6 +55,11 @@
   min-height: 100vh;
   padding: 9vh 7.5vw;
 }
+@media (max-width: 500px) and (orientation: portrait) {
+  .projects {
+    padding-top: 6vh;
+  }
+}
 .projects__list {
   width: 88%;
   padding-top: 4vh;
@@ -100,9 +105,28 @@
     border-radius: 1vh;
   }
 }
+.about {
+  min-height: 100vh;
+  padding: 9vh 7.5vw;
+}
 @media (max-width: 500px) and (orientation: portrait) {
-  .projects {
+  .about {
     padding-top: 6vh;
+  }
+}
+.about__text {
+  margin: 4vh 3vw 0;
+  text-indent: 3.6vw;
+  font-size: 1.65vw;
+  width: 75vw;
+}
+
+@media (max-width: 900px) and (orientation: portrait) {
+  .about__text {
+    margin: 4vh 0;
+    width: 100%;
+    text-indent: 4vh;
+    font-size: 2.5vh;
   }
 }
 .menu {

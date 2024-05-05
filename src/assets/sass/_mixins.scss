@@ -1,3 +1,12 @@
+@mixin page {
+    min-height: 100vh;
+    padding: 9vh 7.5vw;
+
+    @media (max-width: 500px) and (orientation: portrait) {
+        padding-top: 6vh;
+    }
+}
+
 @mixin flexbox($height: auto, $width: auto, $flex-direction: row, 
                $align-items: normal, $justify-content: center) {
     display: flex; 

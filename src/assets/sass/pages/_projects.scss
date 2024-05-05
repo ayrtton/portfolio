@@ -1,6 +1,5 @@
 .projects {
-    min-height: 100vh;
-    padding: 9vh 7.5vw;
+    @include page;
 
     &__list {
         width: 88%;
@@ -53,12 +52,5 @@
                 border-radius: 1vh;
             }
         }
-    }
-}
-
-
-@media (max-width: 500px) and (orientation: portrait) {
-    .projects {
-        padding-top: 6vh;
     }
 }

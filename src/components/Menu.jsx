@@ -1,5 +1,5 @@
 import { IoMenu, IoHome } from "react-icons/io5";
-import { FaCode} from "react-icons/fa";
+import { FaCode, FaUser } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 function Menu() {
@@ -41,6 +41,12 @@ function Menu() {
                     <Link to="/" className="menu__item-link" onClick={activateMenu}>
                         <div className="menu__item-title">Home</div>
                         <IoHome className="menu__item-icon" />
+                    </Link>
+                </li>
+                <li className="menu__item">
+                    <Link to="/about" className="menu__item-link" onClick={activateMenu}>
+                        <div className="menu__item-title">About Me</div>
+                        <FaUser className="menu__item-icon"/>
                     </Link>
                 </li>
                 <li className="menu__item">
