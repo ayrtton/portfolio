@@ -1,5 +1,5 @@
 .home {
-    @include flexbox(auto, auto, column);
+    @include flexbox(100dvh, auto, column);
     padding: 0 6.5vw;
     font-weight: 100;
     text-shadow: 0px 0px 0.8vw white;

@@ -22,7 +22,7 @@
 
 .home {
   display: flex;
-  height: auto;
+  height: 100dvh;
   width: auto;
   align-items: normal;
   flex-direction: column;
