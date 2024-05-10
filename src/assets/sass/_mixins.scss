@@ -1,5 +1,5 @@
 @mixin page {
-    min-height: 100vh;
+    min-height: 100dvh;
     padding: 9vh 7.5vw;
 
     @media (max-width: 500px) and (orientation: portrait) {

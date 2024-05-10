@@ -10,5 +10,5 @@ body {
 }
 
 main {
-    @include flexbox(100vh, auto, column);
+    @include flexbox(100dvh, auto, column);
 }

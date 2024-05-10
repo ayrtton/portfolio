@@ -1,5 +1,5 @@
 .menu {
-    @include flexbox(100vh, 15vw, row, center);
+    @include flexbox(100dvh, 15vw, row, center);
     position: fixed;
     right: 0;
     z-index: 1;

@@ -52,7 +52,7 @@
   }
 }
 .projects {
-  min-height: 100vh;
+  min-height: 100dvh;
   padding: 9vh 7.5vw;
 }
 @media (max-width: 500px) and (orientation: portrait) {
@@ -106,7 +106,7 @@
   }
 }
 .about {
-  min-height: 100vh;
+  min-height: 100dvh;
   padding: 9vh 7.5vw;
 }
 @media (max-width: 500px) and (orientation: portrait) {
@@ -194,7 +194,7 @@
 }
 .menu {
   display: flex;
-  height: 100vh;
+  height: 100dvh;
   width: 15vw;
   align-items: center;
   flex-direction: row;
@@ -347,7 +347,7 @@ body {
 
 main {
   display: flex;
-  height: 100vh;
+  height: 100dvh;
   width: auto;
   align-items: normal;
   flex-direction: column;
