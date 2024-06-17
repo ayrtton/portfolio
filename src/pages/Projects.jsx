@@ -1,3 +1,5 @@
+import spaceTourismWebsite from "../assets/images/space_tourism_website.jpg";
+import faqAccordion from "../assets/images/faq_accordion.jpg";
 import socialProofSection from "../assets/images/social_proof_section.jpg";
 import socialLinksProfile from "../assets/images/social_links_profile.jpg";
 import fourCardFeatureSection from "../assets/images/four_card_feature_section.jpg";
@@ -8,6 +10,16 @@ function Projects() {
         <div className="projects">
             <h1 className="projects__header">Projects</h1>
             <div className="projects__list">
+                <div className="projects__list-row">
+                    <div className="projects__list-item">
+                        <img className="projects__list-image" src={spaceTourismWebsite} alt="Space Tourism Website Project" srcSet="" />
+                        <a className="projects__list-title" href="https://github.com/ayrtton/space-tourism-website" target="blank" rel="noreferrer">Space Tourism Website</a>
+                    </div>
+                    <div className="projects__list-item">
+                        <img className="projects__list-image" src={faqAccordion} alt="Social Links Profile Project" srcSet="" />
+                        <a className="projects__list-title" href="https://github.com/ayrtton/faq-accordion" target="blank" rel="noreferrer">FAQ Accordion</a>
+                    </div>
+                </div>
                 <div className="projects__list-row">
                     <div className="projects__list-item">
                         <img className="projects__list-image" src={socialProofSection} alt="Social Proof Section Project" srcSet="" />
